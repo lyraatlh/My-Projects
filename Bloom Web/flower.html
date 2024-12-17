@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flower Catalog</title>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold"><a href="#">Bloom Catalog</a></div>
+        <nav class="hidden md:flex gap-6">
+            <a href="#hero" class="hover:text-pink-300">Home</a>
+            <a href="#catalog" class="hover:text-pink-300">Catalog</a>
+            <a href="#subscribe" class="hover:text-pink-300">Subscribe</a>
+            <a href="#contact" class="hover:text-pink-300">Contact</a>
+        </nav>
+        <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gray-200 text-center py-20">
+        <h1 class="text-4xl font-bold mb-2">Welcome to Bloom Catalog</h1>
+        <h3 class="text-3xl font-bold mb-4">Find Beauty in Every Petal</h3>
+        <p class="text-lg text-gray-600">A wide selection of fresh flowers for all your special moments.</p>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-12">
+        <h2 class="text-3xl font-bold text-center mb-6">Featured Flowers</h2>
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto">
+            <!-- Flower Item with Popup -->
+            <div class="relative bg-white shadow-lg rounded-lg p-4 text-center">
+                <label for="popup4" class="cursor-pointer">
+                    <img src="jasmine.jpeg" alt="Jasmine" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-semibold">Jasmine</h3>
+                    <p class="text-pink-500 font-bold mt-2">$18.00</p>
+                </label>
+                <input type="checkbox" id="popup4" class="hidden">
+                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="modal4">
+                    <div class="bg-white rounded-lg p-6 max-w-md w-full relative">
+                        <label for="popup4" class="absolute top-2 right-2 text-gray-600 cursor-pointer text-xl">&times;</label>
+                        <h3 class="text-2xl font-bold mb-4">Jasmine</h3>
+                        <p class="text-gray-700">Elegant and fragrant jasmine flowers, perfect for weddings or to enhance your living space with their scent.</p>
+                        <p class="text-pink-500 font-bold mt-4">$18.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative bg-white shadow-lg rounded-lg p-4 text-center">
+                <label for="popup2" class="cursor-pointer">
+                    <img src="rose.jpeg" alt="Rose Bouquet" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-semibold">Rose Bouquet</h3>
+                    <p class="text-pink-500 font-bold mt-2">$25.00</p>
+                </label>
+                <input type="checkbox" id="popup2" class="hidden">
+                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="modal2">
+                    <div class="bg-white rounded-lg p-6 max-w-md w-full relative">
+                        <label for="popup2" class="absolute top-2 right-2 text-gray-600 cursor-pointer text-xl">&times;</label>
+                        <h3 class="text-2xl font-bold mb-4">Rose Bouquet</h3>
+                        <p class="text-gray-700">A beautiful bouquet of fresh roses, perfect for any occasion. Includes 12 premium roses wrapped with care.</p>
+                        <p class="text-pink-500 font-bold mt-4">$25.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative bg-white shadow-lg rounded-lg p-4 text-center">
+                <label for="popup1" class="cursor-pointer">
+                    <img src="sunflower.jpeg" alt="Sunflower" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-semibold">Sunflower</h3>
+                    <p class="text-pink-500 font-bold mt-2">$15.00</p>
+                </label>
+                <input type="checkbox" id="popup1" class="hidden">
+                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="modal1">
+                    <div class="bg-white rounded-lg p-6 max-w-md w-full relative">
+                        <label for="popup1" class="absolute top-2 right-2 text-gray-600 cursor-pointer text-xl">&times;</label>
+                        <h3 class="text-2xl font-bold mb-4">Sunflower</h3>
+                        <p class="text-gray-700">Brighten your day with our vibrant sunflowers, perfect for summer vibes and cheerful decor.</p>
+                        <p class="text-pink-500 font-bold mt-4">$15.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative bg-white shadow-lg rounded-lg p-4 text-center">
+                <label for="popup3" class="cursor-pointer">
+                    <img src="tulip.jpeg" alt="Spring Tulips" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-semibold">Spring Tulips</h3>
+                    <p class="text-pink-500 font-bold mt-2">$20.00</p>
+                </label>
+                <input type="checkbox" id="popup3" class="hidden">
+                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="modal3">
+                    <div class="bg-white rounded-lg p-6 max-w-md w-full relative">
+                        <label for="popup3" class="absolute top-2 right-2 text-gray-600 cursor-pointer text-xl">&times;</label>
+                        <h3 class="text-2xl font-bold mb-4">Spring Tulips</h3>
+                        <p class="text-gray-700">Celebrate spring with these fresh and vibrant tulips, handpicked and arranged to brighten your day.</p>
+                        <p class="text-pink-500 font-bold mt-4">$20.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section id="subscribe" class="bg-pink-500 text-white py-16 text-center">
+        <h2 class="text-3xl font-bold mb-4">Monthly Subscription</h2>
+        <p class="text-lg mb-6">Get fresh flowers delivered to your door every month.</p>
+        <a href="subscribe.html" class="bg-white text-pink-500 font-semibold py-2 px-6 rounded-lg hover:bg-gray-200">Subscribe Now</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12">
+        <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+        <div class="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-6">
+            <form class="flex flex-col gap-4">
+                <input type="text" placeholder="Your Name" class="border rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <input type="email" placeholder="Your Email" class="border rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <textarea placeholder="Your Message" rows="4" class="border rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                <button type="submit" class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 Bloom Catalog. All rights reserved.</p>
+    </footer>
+
+    <style>
+        /* Show popup modal when checkbox is checked */
+        input#popup1:checked ~ #modal1,
+        input#popup2:checked ~ #modal2,
+        input#popup3:checked ~ #modal3,
+        input#popup4:checked ~ #modal4 {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</body>
+</html>

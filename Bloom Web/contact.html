@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styleContact.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="main.html">Lyra</a></div>
+            <ul class="links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="html-page.html">HTML</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="signup-page.html" class="action_btn">Sign Up</a>
+            <!-- Menu toggle menggunakan checkbox -->
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="web-main.html">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="html-page.html">HTML</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup-page.html" class="action_btn">Sign Up</a></li>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
